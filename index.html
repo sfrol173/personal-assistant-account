@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Step project 4</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Galada&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <a href="#" class="logo">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 302.918 315"
+          width="30px"
+          height="30px"
+        >
+          <g fill="rgba(143, 188, 143, 1)">
+            <path
+              d="M180.689,0h-58.461C54.83,0,0,54.83,0,122.228c0,67.393,54.83,122.223,122.228,122.223h0.303V315h57.855&#9;&#9;V186.596h-58.158c-35.497,0-64.373-28.876-64.373-64.368c0-35.497,28.876-64.373,64.373-64.373h58.461&#9;&#9;c35.497,0,64.373,28.876,64.373,64.373c0,26.074-15.296,48.487-37.59,58.613v60.663c54.992-12.163,95.445-60.869,95.445-119.276&#9;&#9;C302.918,54.83,248.088,0,180.689,0z"
+            />
+          </g>
+        </svg>
+        Cardboard
+      </a>
+
+      <button class="sign-in" id="button-sign-in">Вхід</button>
+    </header>
+
+    <main>
+      <form action="" id="filters">
+        <label for="search">Пошук :</label>
+        <input type="search" id="search" placeholder="Заголовок або опис" />
+        <label for="by-status">Статус :</label>
+        <select name="status" id="by-status">
+          <option value="all">Всі</option>
+          <option value="open">Відкрита</option>
+          <option value="done">Виконана</option>
+        </select>
+        <label for="by-urgency">Терміновість :</label>
+        <select name="" id="by-urgency">
+          <option value="all">Всі</option>
+          <option value="high">Невідкладний</option>
+          <option value="normal">Плановий</option>
+          <option value="low">Консультація</option>
+        </select>
+
+        <!-- <button class="filters__submit-button" type="submit">
+          Застосувати
+        </button> -->
+      </form>
+
+      <h2 class="no-cards">Немає жодного запису</h2>
+
+      <ul class="visits-container"></ul>
+    </main>
+
+    <script src="./main.js" type="module"></script>
+  </body>
+</html>

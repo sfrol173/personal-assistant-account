@@ -1,0 +1,184 @@
+body {
+  box-sizing: border-box;
+  margin: 0 auto;
+  background-color: rgb(212, 212, 244);
+  position: relative;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+}
+
+.logo {
+  font-family: "Galada", sans-serif;
+  font-size: 38px;
+  color: palevioletred;
+}
+
+.sign-in {
+  font-size: 16px;
+  background-color: white;
+  padding: 14px;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.sign-in:hover {
+  background-color: #c5c2c2;
+}
+
+main {
+  position: relative;
+  margin: 10px 80px;
+}
+
+#filters {
+  padding: 20px;
+  border-radius: 50px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  align-items: center;
+}
+
+#search {
+  margin-left: 10px;
+  margin-right: 30px;
+  width: 300px;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+#by-status {
+  margin-left: 10px;
+  margin-right: 30px;
+}
+
+#by-urgency {
+  margin-left: 10px;
+  margin-right: 30px;
+}
+
+.filters__submit-button {
+  margin-left: 100px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: rgb(170, 170, 238);
+}
+
+.filters__submit-button:hover {
+  background-color: rgb(125, 125, 224);
+}
+
+.no-cards {
+  position: fixed;
+  font-size: 60px;
+  font-weight: 700;
+  top: 50%;
+  right: 30%;
+}
+
+.sign-in__modal {
+  position: fixed;
+  z-index: 10;
+  width: 300px;
+  height: 300px;
+  background-color: rgb(170, 170, 238);
+  align-content: center;
+  top: 30vh;
+  right: 40vw;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.sign-in__form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.close {
+  position: absolute;
+  top: -48px;
+  right: 6px;
+  background-color: rgb(170, 170, 238);
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.card-modal {
+  position: fixed;
+  z-index: 10;
+  top: 5vh;
+  right: 30vw;
+  width: 500px;
+  padding: 50px 30px 30px 30px;
+  background-color: rgb(170, 170, 238);
+  border-radius: 20px;
+}
+
+.new-card-form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  gap: 12px;
+  font-size: 20px;
+}
+
+.close-modal {
+  position: absolute;
+  top: -40px;
+  right: -16px;
+  background-color: rgb(170, 170, 238);
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.visits-container {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.visit-card {
+  padding: 20px;
+  width: 26vw;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 20px;
+}
+
+.card-item {
+  font-size: 20px;
+}
+
+.more-information {
+  padding: 6px;
+  font-size: 20px;
+  background-color: rgb(170, 170, 238);
+  border-radius: 10px;
+}
+
+.more-information:hover {
+  background-color: rgb(125, 125, 224);
+}
+
+.visit-buttons {
+  display: flex;
+  width: 100%;
+  gap: 30px;
+}
+
+.more-information {
+  width: 300px;
+}
